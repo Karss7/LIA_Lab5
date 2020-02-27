@@ -1,0 +1,7 @@
+#include "MathOps.h"
+
+long long MathOps::fact(int num){
+    if(num < 2)
+      return 1;
+    return num * fact(num-1);
+}
