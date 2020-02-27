@@ -6,6 +6,10 @@ get_directory_property(IS_SUBPROJECT PARENT_DIRECTORY)
 
 option(TESTING "Enable unit testing" ON)
 
+if(TESTING)
+  add_subdirectory(test)
+endif()
+
 set( SRCS 
   main.cpp
   MathOps.cpp
